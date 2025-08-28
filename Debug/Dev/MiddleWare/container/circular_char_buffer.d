@@ -1,7 +1,7 @@
 Dev/MiddleWare/container/circular_char_buffer.o: \
  ../Dev/MiddleWare/container/circular_char_buffer.c \
  ../Dev/MiddleWare/container/circular_char_buffer.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/Utils/ports/stm32f7xx/atomic.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/Utils/ports/stm32f7xx/atomic.h \
  ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h \
  ../Drivers/CMSIS/Include/core_cm7.h \
@@ -28,12 +28,13 @@ Dev/MiddleWare/container/circular_char_buffer.o: \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c_ex.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_iwdg.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/Utils/DBC_assert.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/Utils/error_codes.h
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/Utils/DBC_assert.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/Utils/error_codes.h
 ../Dev/MiddleWare/container/circular_char_buffer.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/Utils/ports/stm32f7xx/atomic.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/Utils/ports/stm32f7xx/atomic.h:
 ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:
 ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h:
 ../Drivers/CMSIS/Include/core_cm7.h:
@@ -60,7 +61,8 @@ D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/Utils/ports/stm32f7x
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c_ex.h:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_iwdg.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/Utils/DBC_assert.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/Utils/error_codes.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/Utils/DBC_assert.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/Utils/error_codes.h:

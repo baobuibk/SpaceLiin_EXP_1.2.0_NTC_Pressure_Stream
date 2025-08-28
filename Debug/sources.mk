@@ -41,6 +41,7 @@ Dev/BSupport/BSP/bsp_heater \
 Dev/BSupport/BSP/bsp_laser \
 Dev/BSupport/BSP/bsp_ntc \
 Dev/BSupport/BSP/bsp_photodiode \
+Dev/BSupport/BSP/bsp_rs485 \
 Dev/BSupport/BSP/bsp_spi_ram \
 Dev/BSupport/BSP/bsp_spi_slave \
 Dev/BSupport/BSP/bsp_tec \

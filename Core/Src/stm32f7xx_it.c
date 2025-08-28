@@ -31,6 +31,7 @@
 #include "bsp_photodiode.h"
 #include "bsp_laser.h"
 #include "bsp_ntc.h"
+#include "bsp_rs485.h"
 
 /* USER CODE END Includes */
 
@@ -225,6 +226,19 @@ void DMA1_Stream1_IRQHandler(void)
   /* USER CODE BEGIN DMA1_Stream1_IRQn 1 */
 
   /* USER CODE END DMA1_Stream1_IRQn 1 */
+}
+
+/**
+  * @brief This function handles USART1 global interrupt.
+  */
+void USART1_IRQHandler(void)
+{
+  /* USER CODE BEGIN USART1_IRQn 0 */
+  bsp_rs485_uart_irq();
+  /* USER CODE END USART1_IRQn 0 */
+  /* USER CODE BEGIN USART1_IRQn 1 */
+
+  /* USER CODE END USART1_IRQn 1 */
 }
 
 /**

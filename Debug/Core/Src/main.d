@@ -25,12 +25,12 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c_ex.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_iwdg.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_adc.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_dma.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_i2c.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_iwdg.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_spi.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_tim.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_usart.h \
@@ -42,30 +42,30 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_cortex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_utils.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_pwr.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/Board/board.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/ADG1414/adg1414.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/ADS8327/ads8327.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/MCP4902/mcp4902.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/LT8722/lt8722.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/UART/uart_driver.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/UART/RingBuffer/ring_buffer.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Common/basetypedef.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/NTC/ntc.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/App/shell/CLI_Command/cli_command.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/CLI_Terminal/CLI_Src/embedded_cli.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/sensor_i2c.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/I2C/i2c.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/sensor_i2c.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/LSM6DSOX/lsm6dsox.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BMP390/bmp390.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BME280/bme280.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/H3LIS331DL/h3lis331dl.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/H250/h250.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/K33/k33.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/App/app_main/app_main.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_photodiode/bsp_photodiode.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_spi_ram/bsp_spi_ram.h \
- D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/IS66WVS4M8BLL/IS66WVS4M8BLL.h
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/Board/board.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/ADG1414/adg1414.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/ADS8327/ads8327.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/MCP4902/mcp4902.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/LT8722/lt8722.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/UART/uart_driver.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/UART/RingBuffer/ring_buffer.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Common/basetypedef.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/NTC/ntc.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/App/shell/CLI_Command/cli_command.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/CLI_Terminal/CLI_Src/embedded_cli.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/sensor_i2c.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/I2C/i2c.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/sensor_i2c.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/LSM6DSOX/lsm6dsox.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BMP390/bmp390.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BME280/bme280.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/H3LIS331DL/h3lis331dl.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/H250/h250.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/K33/k33.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/App/app_main/app_main.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_photodiode/bsp_photodiode.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_spi_ram/bsp_spi_ram.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/IS66WVS4M8BLL/IS66WVS4M8BLL.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
 ../Core/Inc/stm32f7xx_hal_conf.h:
@@ -93,12 +93,12 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_flash_ex.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_i2c_ex.h:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_iwdg.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_adc.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_dma.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_i2c.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_iwdg.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_spi.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_tim.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_usart.h:
@@ -110,27 +110,27 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_cortex.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_utils.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_pwr.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/Board/board.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/ADG1414/adg1414.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/ADS8327/ads8327.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/MCP4902/mcp4902.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/LT8722/lt8722.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/UART/uart_driver.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/UART/RingBuffer/ring_buffer.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Common/basetypedef.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/NTC/ntc.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/App/shell/CLI_Command/cli_command.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/CLI_Terminal/CLI_Src/embedded_cli.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/sensor_i2c.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/I2C/i2c.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/sensor_i2c.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/LSM6DSOX/lsm6dsox.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BMP390/bmp390.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BME280/bme280.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/H3LIS331DL/h3lis331dl.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/H250/h250.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/K33/k33.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/App/app_main/app_main.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_photodiode/bsp_photodiode.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_spi_ram/bsp_spi_ram.h:
-D:/STworkspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/IS66WVS4M8BLL/IS66WVS4M8BLL.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/Board/board.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/ADG1414/adg1414.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/ADS8327/ads8327.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/MCP4902/mcp4902.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/LT8722/lt8722.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/UART/uart_driver.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/UART/RingBuffer/ring_buffer.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Common/basetypedef.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/NTC/ntc.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/App/shell/CLI_Command/cli_command.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/CLI_Terminal/CLI_Src/embedded_cli.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/sensor_i2c.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/I2C/i2c.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/sensor_i2c.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/LSM6DSOX/lsm6dsox.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BMP390/bmp390.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BME280/bme280.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/H3LIS331DL/h3lis331dl.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/H250/h250.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/K33/k33.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/App/app_main/app_main.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_photodiode/bsp_photodiode.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_spi_ram/bsp_spi_ram.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/IS66WVS4M8BLL/IS66WVS4M8BLL.h:

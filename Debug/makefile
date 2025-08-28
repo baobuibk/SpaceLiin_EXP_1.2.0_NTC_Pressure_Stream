@@ -42,6 +42,7 @@ RM := rm -rf
 -include Dev/BSupport/BSP/bsp_tec/subdir.mk
 -include Dev/BSupport/BSP/bsp_spi_slave/subdir.mk
 -include Dev/BSupport/BSP/bsp_spi_ram/subdir.mk
+-include Dev/BSupport/BSP/bsp_rs485/subdir.mk
 -include Dev/BSupport/BSP/bsp_photodiode/subdir.mk
 -include Dev/BSupport/BSP/bsp_ntc/subdir.mk
 -include Dev/BSupport/BSP/bsp_laser/subdir.mk
@@ -109,8 +110,8 @@ all: main-build
 main-build: NANORACK_EXP_V1.2.0_FW_V1.0.2.elf secondary-outputs
 
 # Tool invocations
-NANORACK_EXP_V1.2.0_FW_V1.0.2.elf NANORACK_EXP_V1.2.0_FW_V1.0.2.map: $(OBJS) $(USER_OBJS) D:\STworkspace\NANORACK_EXP_V1.2.0_FW_V1.0.2\STM32F765VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "NANORACK_EXP_V1.2.0_FW_V1.0.2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\STworkspace\NANORACK_EXP_V1.2.0_FW_V1.0.2\STM32F765VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NANORACK_EXP_V1.2.0_FW_V1.0.2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+NANORACK_EXP_V1.2.0_FW_V1.0.2.elf NANORACK_EXP_V1.2.0_FW_V1.0.2.map: $(OBJS) $(USER_OBJS) D:\anh_khoa\document\project\stm\space_liin_tech_workspace\NANORACK_EXP_V1.2.0_FW_V1.0.2\STM32F765VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "NANORACK_EXP_V1.2.0_FW_V1.0.2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"D:\anh_khoa\document\project\stm\space_liin_tech_workspace\NANORACK_EXP_V1.2.0_FW_V1.0.2\STM32F765VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="NANORACK_EXP_V1.2.0_FW_V1.0.2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

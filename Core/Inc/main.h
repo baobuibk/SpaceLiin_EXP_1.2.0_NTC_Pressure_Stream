@@ -31,7 +31,6 @@ extern "C" {
 #include "stm32f7xx_ll_adc.h"
 #include "stm32f7xx_ll_dma.h"
 #include "stm32f7xx_ll_i2c.h"
-#include "stm32f7xx_ll_iwdg.h"
 #include "stm32f7xx_ll_spi.h"
 #include "stm32f7xx_ll_tim.h"
 #include "stm32f7xx_ll_usart.h"
@@ -172,8 +171,6 @@ void SPI1_ReInit(void);
 #define RS485_RX_GPIO_Port GPIOA
 #define LED_G_Pin LL_GPIO_PIN_11
 #define LED_G_GPIO_Port GPIOA
-#define RS485_DE_Pin LL_GPIO_PIN_12
-#define RS485_DE_GPIO_Port GPIOA
 #define LED_B_Pin LL_GPIO_PIN_15
 #define LED_B_GPIO_Port GPIOA
 #define TEC_SCK_Pin LL_GPIO_PIN_10
