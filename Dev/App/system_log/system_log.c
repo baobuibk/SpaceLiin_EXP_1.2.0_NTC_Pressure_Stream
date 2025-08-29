@@ -148,7 +148,7 @@ void system_log_house_keeping(system_log_task_t * const me)
 	
 	uart_stdio_printf(&rs485_stdio, "> BMP P: %s hPa, T: %s C\n\r", pressure_string, temperature_string);
 
-	uart_stdio_printf(&rs485_stdio, "> NTC: ");
+	uart_stdio_printf(&rs485_stdio, "> NTC ");
 
 	for (uint8_t i = 0; i < 8; i++)
 	{
