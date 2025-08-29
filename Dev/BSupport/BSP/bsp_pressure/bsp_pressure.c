@@ -51,7 +51,7 @@ uint8_t bsp_init_pressure()
 
 uint8_t bsp_read_pressure()
 {
-	return BMP390_read_value(SENSOR_READ_PRESSURE);
+	return BMP390_read_value(SENSOR_READ_BMP390);
 }
 
 bool bsp_is_pressure_init_complete()

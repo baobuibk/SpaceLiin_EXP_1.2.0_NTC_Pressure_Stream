@@ -4,8 +4,8 @@
 ../Dev/App/system_log/system_log.c:91:6:system_log_task_start	1
 ../Dev/App/system_log/system_log.c:96:16:system_log_normal_state_handler	2
 ../Dev/App/system_log/system_log.c:113:6:system_log_house_keeping	3
-../Dev/App/system_log/system_log.c:153:6:system_log_set_interval	1
-../Dev/App/system_log/system_log.c:158:6:system_log_enable	1
-../Dev/App/system_log/system_log.c:163:6:system_log_disable	1
-../Dev/App/system_log/system_log.c:168:6:system_log_task_set_ntc_log_mask	1
-../Dev/App/system_log/system_log.c:173:13:double_to_string	5
+../Dev/App/system_log/system_log.c:156:6:system_log_set_interval	1
+../Dev/App/system_log/system_log.c:161:6:system_log_enable	1
+../Dev/App/system_log/system_log.c:166:6:system_log_disable	1
+../Dev/App/system_log/system_log.c:171:6:system_log_task_set_ntc_log_mask	1
+../Dev/App/system_log/system_log.c:176:13:double_to_string	5

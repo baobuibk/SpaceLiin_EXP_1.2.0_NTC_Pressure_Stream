@@ -131,10 +131,12 @@ void system_log_house_keeping(system_log_task_t * const me)
 
 	// KHOA -->
 	char fractional_string[16] = {0};
+	char temperature_string[16] = {0};
 
-	double_to_string(Sensor_Pressure, fractional_string, 3);
+	double_to_string((Sensor_Pressure / 100.0), fractional_string, 3);
+	double_to_string(Sensor_Temp, temperature_string, 3);
 	
-	uart_stdio_printf(&rs485_stdio, "> P: %s Pa\n\r", fractional_string);
+	uart_stdio_printf(&rs485_stdio, "> BMP P: %s hPa, T: %s C\n\r", fractional_string, temperature_string);
 
 	uart_stdio_printf(&rs485_stdio, "> T: ");
 
