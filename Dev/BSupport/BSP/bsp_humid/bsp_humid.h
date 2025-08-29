@@ -1,34 +1,28 @@
 /*
  * bsp_rs485.c
  *
- *  Created on: Aug 28, 2025
+ *  Created on: Aug 29, 2025
  *      Author: Khoa Duong
  */
 
-#ifndef BSUPPORT_BSP_BSP_PRESSURE_BSP_PRESSURE_H_
-#define BSUPPORT_BSP_BSP_PRESSURE_BSP_PRESSURE_H_
+#ifndef BSUPPORT_BSP_BSP_HUMID_BSP_HUMID_H_
+#define BSUPPORT_BSP_BSP_HUMID_BSP_HUMID_H_
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Include ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #include "bme280.h"
-#include "bmp390.h"
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Defines ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Types ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Variables ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-extern BME280_Data_t BME280_Data;
+extern BME280_Data_t bsp_BME280_Data;
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Enum ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Struct ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Class ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Prototype ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-void bsp_pressure_init_i2c();
-uint8_t bsp_init_pressure();
-uint8_t bsp_read_pressure();
+void bsp_humid_init_i2c();
 
-bool bsp_is_pressure_init_complete();
-bool bsp_is_pressure_read_complete();
+uint8_t bsp_init_humid();
+uint8_t bsp_read_humid();
 
-// void bsp_pressure_i2c_ev_irq(void);
-// void bsp_pressure_i2c_er_irq(void);
-
-#endif /* BSUPPORT_BSP_BSP_PRESSURE_BSP_PRESSURE_H_ */
+#endif /* BSUPPORT_BSP_BSP_HUMID_BSP_HUMID_H_ */

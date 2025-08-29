@@ -50,6 +50,7 @@ Dev/Sensor_I2C/K33/k33.o: ../Dev/Sensor_I2C/K33/k33.c \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/MCP4902/mcp4902.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/LT8722/lt8722.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/I2C/i2c.h \
+ ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/UART/uart_driver.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/UART/RingBuffer/ring_buffer.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Common/basetypedef.h
@@ -104,6 +105,7 @@ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_F
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/MCP4902/mcp4902.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/LT8722/lt8722.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/I2C/i2c.h:
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/UART/uart_driver.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/UART/RingBuffer/ring_buffer.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Common/basetypedef.h:

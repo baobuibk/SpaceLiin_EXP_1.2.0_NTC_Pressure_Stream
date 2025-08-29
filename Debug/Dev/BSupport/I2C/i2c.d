@@ -1,7 +1,5 @@
 Dev/BSupport/I2C/i2c.o: ../Dev/BSupport/I2C/i2c.c \
  ../Dev/BSupport/I2C/i2c.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_utils.h \
- ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h \
  ../Drivers/CMSIS/Include/core_cm7.h \
  ../Drivers/CMSIS/Include/cmsis_version.h \
@@ -9,6 +7,9 @@ Dev/BSupport/I2C/i2c.o: ../Dev/BSupport/I2C/i2c.c \
  ../Drivers/CMSIS/Include/cmsis_gcc.h \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/system_stm32f7xx.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_utils.h \
+ ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h \
  ../Core/Inc/stm32f7xx_hal_conf.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h \
@@ -32,8 +33,6 @@ Dev/BSupport/I2C/i2c.o: ../Dev/BSupport/I2C/i2c.c \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_pwr_ex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_i2c.h
 ../Dev/BSupport/I2C/i2c.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_utils.h:
-../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:
 ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h:
 ../Drivers/CMSIS/Include/core_cm7.h:
 ../Drivers/CMSIS/Include/cmsis_version.h:
@@ -41,6 +40,9 @@ Dev/BSupport/I2C/i2c.o: ../Dev/BSupport/I2C/i2c.c \
 ../Drivers/CMSIS/Include/cmsis_gcc.h:
 ../Drivers/CMSIS/Include/mpu_armv7.h:
 ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/system_stm32f7xx.h:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_utils.h:
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
 ../Core/Inc/stm32f7xx_hal_conf.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:

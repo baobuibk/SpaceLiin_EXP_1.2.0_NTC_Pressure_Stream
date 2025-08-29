@@ -49,7 +49,8 @@ Dev/Sensor_I2C/BMP390/bmp390.o: ../Dev/Sensor_I2C/BMP390/bmp390.c \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/MCP4902/mcp4902.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/LT8722/lt8722.h \
  ../Dev/Sensor_I2C/BMP390/bmp390.h \
- D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/I2C/i2c.h
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/I2C/i2c.h \
+ ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/Board/board.h:
 ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:
 ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h:
@@ -101,3 +102,4 @@ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_F
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/LT8722/lt8722.h:
 ../Dev/Sensor_I2C/BMP390/bmp390.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/I2C/i2c.h:
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h:

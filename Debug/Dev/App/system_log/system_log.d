@@ -67,8 +67,11 @@ Dev/App/system_log/system_log.o: ../Dev/App/system_log/system_log.c \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/STDIO/uart_stdio.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/container/circular_char_buffer.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_pressure/bsp_pressure.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BME280/bme280.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/I2C/i2c.h \
+ ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BMP390/bmp390.h \
- D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/I2C/i2c.h
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_humid/bsp_humid.h
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/lwl/lwl.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/App/Signals/app_signals.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/FSM/FSM_signals.h:
@@ -137,5 +140,8 @@ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_F
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/STDIO/uart_stdio.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/MiddleWare/container/circular_char_buffer.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_pressure/bsp_pressure.h:
-D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BMP390/bmp390.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BME280/bme280.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/I2C/i2c.h:
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BMP390/bmp390.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_humid/bsp_humid.h:

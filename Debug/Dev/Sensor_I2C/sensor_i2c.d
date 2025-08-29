@@ -1,8 +1,6 @@
 Dev/Sensor_I2C/sensor_i2c.o: ../Dev/Sensor_I2C/sensor_i2c.c \
  ../Dev/Sensor_I2C/sensor_i2c.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/I2C/i2c.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_utils.h \
- ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h \
  ../Drivers/CMSIS/Include/core_cm7.h \
  ../Drivers/CMSIS/Include/cmsis_version.h \
@@ -10,6 +8,9 @@ Dev/Sensor_I2C/sensor_i2c.o: ../Dev/Sensor_I2C/sensor_i2c.c \
  ../Drivers/CMSIS/Include/cmsis_gcc.h \
  ../Drivers/CMSIS/Include/mpu_armv7.h \
  ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/system_stm32f7xx.h \
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_utils.h \
+ ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h \
+ ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h \
  ../Core/Inc/stm32f7xx_hal_conf.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h \
@@ -61,8 +62,6 @@ Dev/Sensor_I2C/sensor_i2c.o: ../Dev/Sensor_I2C/sensor_i2c.c \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Common/basetypedef.h
 ../Dev/Sensor_I2C/sensor_i2c.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/I2C/i2c.h:
-../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_utils.h:
-../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:
 ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h:
 ../Drivers/CMSIS/Include/core_cm7.h:
 ../Drivers/CMSIS/Include/cmsis_version.h:
@@ -70,6 +69,9 @@ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_F
 ../Drivers/CMSIS/Include/cmsis_gcc.h:
 ../Drivers/CMSIS/Include/mpu_armv7.h:
 ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/system_stm32f7xx.h:
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_utils.h:
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
 ../Core/Inc/stm32f7xx_hal_conf.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:

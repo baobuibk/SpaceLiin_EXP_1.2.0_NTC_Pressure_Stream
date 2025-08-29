@@ -19,6 +19,7 @@
 #include "bsp_ntc.h"
 #include "bsp_rs485.h"
 #include "bsp_pressure.h"
+#include "bsp_humid.h"
 
 //DBC_MODULE_NAME("system_log")
 
@@ -84,6 +85,9 @@ static void system_log_task_init(system_log_task_t * const me, system_log_evt_t 
 	bsp_pressure_init_i2c();
 	bsp_init_pressure();
 
+	bsp_humid_init_i2c();
+	bsp_init_humid();
+
 	bsp_ntc_adc_init();
 	// KHOA -->
 }
@@ -104,6 +108,7 @@ static state_t system_log_normal_state_handler(system_log_task_t * const me, sys
 	case EVT_SYSTEM_LOG_POLL:
 		// wdg_feed(WDG_SYSTEM_LOG_ID);
 		bsp_read_pressure();
+		bsp_read_humid();
 		system_log_house_keeping(me);
 	}
 	return HANDLED_STATUS;
@@ -130,15 +135,20 @@ void system_log_house_keeping(system_log_task_t * const me)
 	// SANG -->
 
 	// KHOA -->
-	char fractional_string[16] = {0};
+	char humid_string[16] = {0};
+	char pressure_string[16] = {0};
 	char temperature_string[16] = {0};
 
-	double_to_string((Sensor_Pressure / 100.0), fractional_string, 3);
+	double_to_string(bsp_BME280_Data.humidity, humid_string, 3);
+
+	uart_stdio_printf(&rs485_stdio, "> BME H: %s %%RH\n\r", humid_string);
+
+	double_to_string((Sensor_Pressure / 100.0), pressure_string, 3);
 	double_to_string(Sensor_Temp, temperature_string, 3);
 	
-	uart_stdio_printf(&rs485_stdio, "> BMP P: %s hPa, T: %s C\n\r", fractional_string, temperature_string);
+	uart_stdio_printf(&rs485_stdio, "> BMP P: %s hPa, T: %s C\n\r", pressure_string, temperature_string);
 
-	uart_stdio_printf(&rs485_stdio, "> T: ");
+	uart_stdio_printf(&rs485_stdio, "> NTC: ");
 
 	for (uint8_t i = 0; i < 8; i++)
 	{

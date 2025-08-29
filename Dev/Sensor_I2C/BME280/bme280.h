@@ -14,8 +14,8 @@
 #include "board.h"
 
 #define BME280_ID					0x60
-//#define BME280_I2C_ADDR			0x76	//with SDO connect to GND
-#define BME280_I2C_ADDR				0x77	//with SDO connect to VCC
+#define BME280_I2C_ADDR				0x76	//with SDO connect to GND
+// #define BME280_I2C_ADDR				0x77	//with SDO connect to VCC
 
 #define BME280_CALIB_REG_1			0x88
 #define BME280_CALIB_REG_2			0xE1

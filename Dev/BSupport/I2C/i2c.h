@@ -8,6 +8,7 @@
 #ifndef I2C_I2C_H_
 #define I2C_I2C_H_
 
+#include "stm32f765xx.h"
 #include "stm32f7xx_ll_utils.h"
 #include "stm32f7xx_ll_i2c.h"
 

@@ -197,13 +197,13 @@ void SysTick_Handler(void)
   /* USER CODE BEGIN SysTick_IRQn 0 */
   //SCH_RunSystemTickTimer();
   bsp_ntc_trigger_adc();
-  bsp_laser_trigger_adc();
+  // bsp_laser_trigger_adc();
 
   SST_TimeEvt_tick();
   /* USER CODE END SysTick_IRQn 0 */
   HAL_IncTick();
   /* USER CODE BEGIN SysTick_IRQn 1 */
-  date_time_update();
+  // date_time_update();
 
 //  LL_GPIO_TogglePin(WD_DONE_GPIO_Port, WD_DONE_Pin);
   /* USER CODE END SysTick_IRQn 1 */

@@ -45,6 +45,7 @@ Dev/Sensor_I2C/H3LIS331DL/h3lis331dl.o: \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_utils.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_pwr.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/I2C/i2c.h \
+ ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/Board/board.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/ADG1414/adg1414.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/ADS8327/ads8327.h \
@@ -96,6 +97,7 @@ Dev/Sensor_I2C/H3LIS331DL/h3lis331dl.o: \
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_utils.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_pwr.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/I2C/i2c.h:
+../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f765xx.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/Board/board.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/ADG1414/adg1414.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/ADS8327/ads8327.h:

@@ -1,7 +1,7 @@
 /*
  * bsp_rs485.c
  *
- *  Created on: Aug 28, 2025
+ *  Created on: Aug 29, 2025
  *      Author: Khoa Duong
  */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Private Include~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -12,7 +12,7 @@
 
 #include "board.h"
 
-#include "bsp_pressure.h"
+#include "bsp_humid.h"
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Private Defines ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Private Prototype ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -23,75 +23,30 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Private Variables ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Private Prototype ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Public Variables ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+BME280_Data_t bsp_BME280_Data =
+{
+		.pressure = 0,
+		.humidity = 0,
+		.temperature = 0
+};
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Public Function ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-void bsp_pressure_init_i2c()
+void bsp_humid_init_i2c()
 {
 	LL_GPIO_SetOutputPin(SENSOR2_EN_GPIO_Port, SENSOR2_EN_Pin);
 	LL_GPIO_SetOutputPin(SENSOR1_EN_GPIO_Port, SENSOR1_EN_Pin);
 	LL_mDelay(100);
 }
 
-uint8_t bsp_init_pressure()
+uint8_t bsp_init_humid()
 {
-   	return BMP390_init();
+	return BME280_Init();
 }
 
-uint8_t bsp_read_pressure()
+uint8_t bsp_read_humid()
 {
-	return BMP390_read_value(SENSOR_READ_BMP390);
+	return BME280_Read_Data(&bsp_BME280_Data);
 }
-
-bool bsp_is_pressure_init_complete()
-{
-    return Is_BMP390_Init_Complete();
-}
-
-bool bsp_is_pressure_read_complete()
-{
-    return Is_BMP390_Read_Complete();
-}
-
-//void I2C_ER_IRQHandler(i2c_stdio_typedef* p_i2c)
-//{
-//	// Check for Acknowledge Failure (AF) error
-//    if (LL_I2C_IsActiveFlag_AF(p_i2c->handle) == 1)
-//    {
-//        LL_I2C_ClearFlag_AF(p_i2c->handle);
-//        *p_i2c->p_request_buffer[p_i2c->read_index].p_is_complete = I2C_ERROR_SENSOR_NOT_CONNECTED;
-//    }
-//	else if (LL_I2C_IsActiveFlag_BERR(p_i2c->handle) == 1)
-//	{
-//		LL_I2C_ClearFlag_BERR(p_i2c->handle);
-//        *p_i2c->p_request_buffer[p_i2c->read_index].p_is_complete = I2C_ERROR_BUS_ERROR;
-//	}
-//
-//	p_i2c->irqn_stage = 0;
-//	LL_I2C_GenerateStopCondition(p_i2c->handle);
-//
-//	if (p_i2c->p_request_buffer[p_i2c->read_index].write_or_read == 0)
-//	{
-//		LL_I2C_DisableIT_TX(p_i2c->handle);
-//	}
-//	else
-//	{
-//		LL_I2C_DisableIT_RX(p_i2c->handle);
-//	}
-//
-//	LL_I2C_DisableIT_EVT(p_i2c->handle);
-//	LL_I2C_DisableIT_ERR(p_i2c->handle);
-//
-//	I2C_ADVANCE_REQUEST_READ_INDEX(p_i2c);
-//
-//	if (I2C_REQUEST_BUFFER_EMPTY(p_i2c))
-//	{
-//		p_i2c->is_disable = true;
-//		return;
-//	}
-//
-//	I2C_Prime_Transmit(p_i2c);
-//
-//	return;
-//}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Private Function ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End of the program ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
