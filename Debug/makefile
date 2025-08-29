@@ -33,6 +33,7 @@ RM := rm -rf
 -include Dev/Devices/IR_LED/subdir.mk
 -include Dev/Devices/ADS8327/subdir.mk
 -include Dev/Devices/ADG1414/subdir.mk
+-include Dev/Component/i2c_stdio/subdir.mk
 -include Dev/BSupport/UART/RingBuffer/subdir.mk
 -include Dev/BSupport/UART/subdir.mk
 -include Dev/BSupport/SysTick/subdir.mk
@@ -43,6 +44,7 @@ RM := rm -rf
 -include Dev/BSupport/BSP/bsp_spi_slave/subdir.mk
 -include Dev/BSupport/BSP/bsp_spi_ram/subdir.mk
 -include Dev/BSupport/BSP/bsp_rs485/subdir.mk
+-include Dev/BSupport/BSP/bsp_pressure/subdir.mk
 -include Dev/BSupport/BSP/bsp_photodiode/subdir.mk
 -include Dev/BSupport/BSP/bsp_ntc/subdir.mk
 -include Dev/BSupport/BSP/bsp_laser/subdir.mk

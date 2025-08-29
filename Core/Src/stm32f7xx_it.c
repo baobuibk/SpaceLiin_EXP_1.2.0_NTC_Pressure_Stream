@@ -32,6 +32,7 @@
 #include "bsp_laser.h"
 #include "bsp_ntc.h"
 #include "bsp_rs485.h"
+#include "bsp_pressure.h"
 
 /* USER CODE END Includes */
 

@@ -24,6 +24,7 @@ struct system_log_evt_t{
 struct system_log_task_t{
 	SST_Task super;
 	SST_TimeEvt system_log_timer;
+	SST_TimeEvt i2c_timer;
 	system_log_task_handler_t state; /* the "state variable" */
 	uint32_t	interval;
 	uint8_t ntc_log_mask;

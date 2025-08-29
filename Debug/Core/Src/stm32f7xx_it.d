@@ -69,7 +69,10 @@ Core/Src/stm32f7xx_it.o: ../Core/Src/stm32f7xx_it.c ../Core/Inc/main.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_photodiode/bsp_photodiode.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_laser/bsp_laser.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_ntc/bsp_ntc.h \
- D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_rs485/bsp_rs485.h
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_rs485/bsp_rs485.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_pressure/bsp_pressure.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BMP390/bmp390.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/I2C/i2c.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
 ../Core/Inc/stm32f7xx_hal_conf.h:
@@ -142,3 +145,6 @@ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_F
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_laser/bsp_laser.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_ntc/bsp_ntc.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_rs485/bsp_rs485.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/bsp_pressure/bsp_pressure.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BMP390/bmp390.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/I2C/i2c.h:

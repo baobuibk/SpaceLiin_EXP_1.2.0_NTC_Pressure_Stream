@@ -41,6 +41,7 @@ Dev/BSupport/BSP/bsp_heater \
 Dev/BSupport/BSP/bsp_laser \
 Dev/BSupport/BSP/bsp_ntc \
 Dev/BSupport/BSP/bsp_photodiode \
+Dev/BSupport/BSP/bsp_pressure \
 Dev/BSupport/BSP/bsp_rs485 \
 Dev/BSupport/BSP/bsp_spi_ram \
 Dev/BSupport/BSP/bsp_spi_slave \
@@ -51,6 +52,7 @@ Dev/BSupport/I2C \
 Dev/BSupport/SysTick \
 Dev/BSupport/UART/RingBuffer \
 Dev/BSupport/UART \
+Dev/Component/i2c_stdio \
 Dev/Devices/ADG1414 \
 Dev/Devices/ADS8327 \
 Dev/Devices/IR_LED \

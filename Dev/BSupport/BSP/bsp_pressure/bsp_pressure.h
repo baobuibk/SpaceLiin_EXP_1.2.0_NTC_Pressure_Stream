@@ -1,43 +1,31 @@
-#ifndef _BMP390_H_
+/*
+ * bsp_rs485.c
+ *
+ *  Created on: Aug 28, 2025
+ *      Author: Khoa Duong
+ */
 
-#define _BMP390_H_
+#ifndef BSUPPORT_BSP_BSP_PRESSURE_BSP_PRESSURE_H_
+#define BSUPPORT_BSP_BSP_PRESSURE_BSP_PRESSURE_H_
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Include ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-#include "stdint.h"
-#include "stdbool.h"
-#include "i2c.h"
+#include "bmp390.h"
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Defines ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Types ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Variables ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-extern double Sensor_Temp;
-extern double Sensor_Pressure;
-extern double Sensor_Altitude;
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Enum ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-typedef enum _Sensor_Read_typedef_
-{
-	/* :::::::::: BMP390 Read Data Type :::::::: */
-	SENSOR_READ_TEMP,
-	SENSOR_READ_PRESSURE,
-	SENSOR_READ_ALTITUDE,
-	SENSOR_READ_BMP390,
-
-} Sensor_Read_typedef;
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Struct ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Class ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Prototype ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* :::::::::: BMP390 Command :::::::: */
-uint8_t BMP390_init();
+void bsp_pressure_init_i2c();
+uint8_t bsp_init_pressure();
+uint8_t bsp_read_pressure();
 
-uint8_t BMP390_read_value(Sensor_Read_typedef read_type);
+bool bsp_is_pressure_init_complete();
+bool bsp_is_pressure_read_complete();
 
-/* :::::::::: BMP390 Flag Check Command :::::::: */
-bool Is_BMP390_Init_Complete();
+// void bsp_pressure_i2c_ev_irq(void);
+// void bsp_pressure_i2c_er_irq(void);
 
-bool Is_BMP390_Read_Complete();
-
-/* :::::::::: Sensor_BMP390 Interface :::::::: */
-
-#endif //_BMP390_H_
+#endif /* BSUPPORT_BSP_BSP_PRESSURE_BSP_PRESSURE_H_ */

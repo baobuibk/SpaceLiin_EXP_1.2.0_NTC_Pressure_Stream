@@ -34,6 +34,7 @@ Dev/Sensor_I2C/sensor_i2c.o: ../Dev/Sensor_I2C/sensor_i2c.c \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_i2c.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/LSM6DSOX/lsm6dsox.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BMP390/bmp390.h \
+ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BME280/bme280.h \
  ../Core/Inc/main.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_adc.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_dma.h \
@@ -47,7 +48,6 @@ Dev/Sensor_I2C/sensor_i2c.o: ../Dev/Sensor_I2C/sensor_i2c.c \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_bus.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_cortex.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_pwr.h \
- D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BME280/bme280.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/Board/board.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/ADG1414/adg1414.h \
  D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/ADS8327/ads8327.h \
@@ -94,6 +94,7 @@ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_F
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_i2c.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/LSM6DSOX/lsm6dsox.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BMP390/bmp390.h:
+D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BME280/bme280.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_adc.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_dma.h:
@@ -107,7 +108,6 @@ D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_F
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_bus.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_cortex.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_pwr.h:
-D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Sensor_I2C/BME280/bme280.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/BSupport/BSP/Board/board.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/ADG1414/adg1414.h:
 D:/anh_khoa/document/project/stm/space_liin_tech_workspace/NANORACK_EXP_V1.2.0_FW_V1.0.2/Dev/Devices/ADS8327/ads8327.h:

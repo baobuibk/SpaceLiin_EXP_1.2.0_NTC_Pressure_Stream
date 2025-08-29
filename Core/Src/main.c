@@ -139,7 +139,7 @@ int main(void)
   MX_TIM1_Init();
   MX_TIM2_Init();
   MX_CRC_Init();
-  MX_IWDG_Init();
+//  MX_IWDG_Init();
   /* USER CODE BEGIN 2 */
 
 
@@ -208,10 +208,12 @@ int main(void)
 ////  bsp_spi_ram_read_dma(20000, 20000, (uint8_t *)read_buffer2);
 ////    while(!bsp_spi_ram_is_transfer_done());
 //__NOP();
-
-  app_init();
-  app_start();
-  app_run();
+	// bsp_pressure_init_i2c();
+	// bsp_init_pressure();
+	// bsp_read_pressure();
+ app_init();
+ app_start();
+ app_run();
   while (1)
   {
     /* USER CODE END WHILE */
@@ -695,7 +697,7 @@ static void MX_I2C1_Init(void)
   LL_I2C_DisableGeneralCall(I2C1);
   LL_I2C_EnableClockStretching(I2C1);
   I2C_InitStruct.PeripheralMode = LL_I2C_MODE_I2C;
-  I2C_InitStruct.Timing = 0x601063FF;
+  I2C_InitStruct.Timing = 0x004019D6;
   I2C_InitStruct.AnalogFilter = LL_I2C_ANALOGFILTER_ENABLE;
   I2C_InitStruct.DigitalFilter = 0;
   I2C_InitStruct.OwnAddress1 = 0;
