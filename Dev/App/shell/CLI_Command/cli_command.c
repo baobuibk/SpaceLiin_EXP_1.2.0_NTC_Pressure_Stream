@@ -48,6 +48,7 @@ static bool is_measured = false;
 
 static void CMD_Clear_CLI(EmbeddedCli *cli, char *args, void *context);
 static void CMD_Reset(EmbeddedCli *cli, char *args, void *context);
+static void CMD_Temp_Control_Log_Control(EmbeddedCli *cli, char *args, void *context);
 
 static void CMD_NTC_Get_Temp(EmbeddedCli *cli, char *args, void *context);
 static void CMD_PWR_5V_Set(EmbeddedCli *cli, char *args, void *context);
@@ -177,6 +178,8 @@ static const CliCommandBinding cliStaticBindings_internal[] = {
     { "Ultis", "help",         "Print list of all available CLI commands [Firmware: 1]", false,  NULL, CMD_Help },
     { "Ultis", "cls",          "Clear the console output screen",                        false,  NULL, CMD_Clear_CLI },
     { "Ultis", "reset",        "Perform MCU software reset",                             false,  NULL, CMD_Reset },
+	{ "Ultis", "log_control",  "Enable or Disable temp control log [0:OFF / 1:ON]",      true,   NULL, CMD_Temp_Control_Log_Control },
+
     // NTC
     { "NTC",   "ntc_get_temp", "Read temperature value from NTC sensor [ch: 0-7, a=all]", true,   NULL, CMD_NTC_Get_Temp },
 
@@ -292,6 +295,29 @@ static void CMD_Clear_CLI(EmbeddedCli *cli, char *args, void *context) {
 static void CMD_Reset(EmbeddedCli *cli, char *args, void *context) {
 	NVIC_SystemReset();
     embeddedCliPrint(cli, "");
+}
+
+static void CMD_Temp_Control_Log_Control(EmbeddedCli *cli, char *args, void *context) {
+
+	uint8_t tokenCount = embeddedCliGetTokenCount(args);
+	if (tokenCount != 1)
+	{
+		cli_printf(cli, "command require one argument\r\n");
+		return;
+	}
+	
+	const char *arg1 = embeddedCliGetToken(args, 1);
+	uint32_t status = atoi(arg1);
+
+	if ((status > 1) || (status < 0))
+	{
+		cli_printf(cli, "Wrong arguments\r\n");
+		return;
+	}
+
+	p_temperature_control_task->log_enable = (uint8_t)status;
+
+	cli_printf(cli,"OK\r\n");
 }
 
 static void CMD_NTC_Get_Temp(EmbeddedCli *cli, char *args, void *context)

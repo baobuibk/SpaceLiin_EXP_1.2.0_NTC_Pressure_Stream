@@ -11,7 +11,7 @@
 #include "uart_stdio.h"
 #include "main.h"
 
-//#define TEMPERATURE_CONTROL_DEBUG_PRINTING
+// #define TEMPERATURE_CONTROL_DEBUG_PRINTING
 #ifdef TEMPERATURE_CONTROL_DEBUG_PRINTING
     #define temp_control_debug_print(...) DBG(0,__VA_ARGS__)
 #else
@@ -90,6 +90,10 @@ struct temperature_control_task_t {
     temperature_control_profile_t temperature_control_profile;
     temperature_tec_ovr_profile_t temperature_tec_ovr_profile;
     uint32_t auto_enable;
+
+	// --> KHOA
+	uint8_t log_enable;
+	// <-- KHOA
 };
 
 struct temperature_control_task_init_t {
