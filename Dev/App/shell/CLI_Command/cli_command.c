@@ -223,20 +223,20 @@ static const CliCommandBinding cliStaticBindings_internal[] = {
 	{ "Auto",  "get_auto_recover", "get auto recover ",      true,  NULL, CMD_Get_Auto_Recover },
 
 	// Laser Photo
-	{ "Laser", "laser_int_set_current",    "format: laser_int_set_current [percent]",  true, NULL, CMD_Set_Laser_Int_Current },
-	{ "Laser", "laser_ext_set_current",    "format: laser_ext_set_current  [percent]",  true, NULL, CMD_Set_Laser_Ext_Current },
-	{ "Laser", "laser_get_current",    "format: laser_get_current [0/1]",  true, NULL, CMD_Laser_Get_Current },
-	{ "Laser", "laser_int_switch_on",    "format: laser_int_switch_on [pos]",  true, NULL, CMD_Int_Laser_Switch_On },
-	{ "Laser", "laser_ext_switch_on",    "format: laser_ext_switch_on [pos]",  true, NULL, CMD_Ext_Laser_Switch_On },
-	{ "Laser", "laser_int_switch_off",    "format: laser_int_switch_off",  true, NULL, CMD_Int_Laser_Switch_Off },
-	{ "Laser", "laser_ext_switch_off",    "format: laser_ext_switch_off",  true, NULL, CMD_Ext_Laser_Switch_Off },
+	// { "Laser", "laser_int_set_current",    "format: laser_int_set_current [percent]",  true, NULL, CMD_Set_Laser_Int_Current },
+	// { "Laser", "laser_ext_set_current",    "format: laser_ext_set_current  [percent]",  true, NULL, CMD_Set_Laser_Ext_Current },
+	// { "Laser", "laser_get_current",    "format: laser_get_current [0/1]",  true, NULL, CMD_Laser_Get_Current },
+	// { "Laser", "laser_int_switch_on",    "format: laser_int_switch_on [pos]",  true, NULL, CMD_Int_Laser_Switch_On },
+	// { "Laser", "laser_ext_switch_on",    "format: laser_ext_switch_on [pos]",  true, NULL, CMD_Ext_Laser_Switch_On },
+	// { "Laser", "laser_int_switch_off",    "format: laser_int_switch_off",  true, NULL, CMD_Int_Laser_Switch_Off },
+	// { "Laser", "laser_ext_switch_off",    "format: laser_ext_switch_off",  true, NULL, CMD_Ext_Laser_Switch_Off },
 
 
-	{ "Experiment", "exp_set_profile",    "format: exp_set_profile sampling_rate pos laser_percent pre_time experiment_time post_time",  true, NULL, cmd_exp_set_profile },
-	{ "Experiment", "exp_get_profile",    "format: exp_get_profile",  true, NULL, cmd_exp_get_profile },
-	{ "Experiment", "exp_start_measuring",    "format: exp_start_measuring",  true, NULL, cmd_exp_start_measuring },
-	{ "Experiment", "exp_ram_read",    "format: exp_ram_read [address] [num_sample] [mode]",  true, NULL, cmd_exp_ram_read },
-	{ "Experiment", "exp_data_transfer",    "format: exp_data_transfer",  true, NULL, cmd_exp_data_transfer },
+	// { "Experiment", "exp_set_profile",    "format: exp_set_profile sampling_rate pos laser_percent pre_time experiment_time post_time",  true, NULL, cmd_exp_set_profile },
+	// { "Experiment", "exp_get_profile",    "format: exp_get_profile",  true, NULL, cmd_exp_get_profile },
+	// { "Experiment", "exp_start_measuring",    "format: exp_start_measuring",  true, NULL, cmd_exp_start_measuring },
+	// { "Experiment", "exp_ram_read",    "format: exp_ram_read [address] [num_sample] [mode]",  true, NULL, cmd_exp_ram_read },
+	// { "Experiment", "exp_data_transfer",    "format: exp_data_transfer",  true, NULL, cmd_exp_data_transfer },
 
 
 	{ "TEST", "clear_fram",    "",  true, NULL, cmd_clear_fram },
