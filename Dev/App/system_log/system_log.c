@@ -85,8 +85,8 @@ static void system_log_task_init(system_log_task_t * const me, system_log_evt_t 
 	bsp_pressure_init_i2c();
 	bsp_init_pressure();
 
-	bsp_humid_init_i2c();
-	bsp_init_humid();
+	// bsp_humid_init_i2c();
+	// bsp_init_humid();
 
 	bsp_ntc_adc_init();
 	// KHOA -->
@@ -108,7 +108,7 @@ static state_t system_log_normal_state_handler(system_log_task_t * const me, sys
 	case EVT_SYSTEM_LOG_POLL:
 		// wdg_feed(WDG_SYSTEM_LOG_ID);
 		bsp_read_pressure();
-		bsp_read_humid();
+		// bsp_read_humid();
 		system_log_house_keeping(me);
 	}
 	return HANDLED_STATUS;
@@ -135,13 +135,13 @@ void system_log_house_keeping(system_log_task_t * const me)
 	// SANG -->
 
 	// KHOA -->
-	char humid_string[16] = {0};
+	// char humid_string[16] = {0};
 	char pressure_string[16] = {0};
 	char temperature_string[16] = {0};
 
-	double_to_string(bsp_BME280_Data.humidity, humid_string, 3);
+	// double_to_string(bsp_BME280_Data.humidity, humid_string, 3);
 
-	uart_stdio_printf(&rs485_stdio, "> BME H: %s %%RH\n\r", humid_string);
+	// uart_stdio_printf(&rs485_stdio, "> BME H: %s %%RH\n\r", humid_string);
 
 	double_to_string((Sensor_Pressure / 100.0), pressure_string, 3);
 	double_to_string(Sensor_Temp, temperature_string, 3);

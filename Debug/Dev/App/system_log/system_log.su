@@ -3,7 +3,7 @@
 ../Dev/App/system_log/system_log.c:73:13:system_log_task_init	16	static
 ../Dev/App/system_log/system_log.c:95:6:system_log_task_start	16	static
 ../Dev/App/system_log/system_log.c:100:16:system_log_normal_state_handler	16	static
-../Dev/App/system_log/system_log.c:118:6:system_log_house_keeping	80	static
+../Dev/App/system_log/system_log.c:118:6:system_log_house_keeping	64	static
 ../Dev/App/system_log/system_log.c:165:6:system_log_set_interval	16	static
 ../Dev/App/system_log/system_log.c:170:6:system_log_enable	8	static
 ../Dev/App/system_log/system_log.c:175:6:system_log_disable	8	static
